@@ -1,0 +1,17 @@
+import javax.swing.*;
+public class mac1
+{
+    public static void main (String [] args){
+        int[] arr = {6, 7, 3, 7, 9, 7, 4, 5, 7, 7};
+
+        int count = 0;
+
+        for (int num : arr) {
+            if (num == 7) {
+                count++;
+            }
+        }
+
+        JOptionPane.showMessageDialog(null, "The number 7 appears " + count + " times.");
+    }
+}

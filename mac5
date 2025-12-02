@@ -1,0 +1,15 @@
+import javax.swing.*;
+public class mac4
+{
+    public static void main(String [] args){
+        int [] num = {4,9,13,4,100,23};
+        int z = 5;
+        
+        for (int i = 0; i < num.length; i++){
+            if (num[i] == z){
+                JOptionPane.showMessageDialog(null, "Found " + z + " at index " + i);
+                break;
+            }
+        }
+    }
+}

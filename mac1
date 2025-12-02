@@ -1,0 +1,21 @@
+import java.util.*;
+import javax.swing.*;
+public class macoy
+{
+    public static void main (String [] args){
+        Scanner ngan = new Scanner (System.in);
+        int z = 0;
+        
+        while(z < 1 || z > 100){
+            z = Integer.parseInt(
+            JOptionPane.showInputDialog("Enter a number between 1 to 100: ")
+            );
+            
+            if (z >= 1 && z <= 100){
+                break;
+            }
+            JOptionPane.showMessageDialog(null, "Invalid Input! Try again. ");
+        }
+        JOptionPane.showMessageDialog(null, "You entered: " + z);
+    }
+}

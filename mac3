@@ -1,0 +1,14 @@
+public class mac2
+{
+    public static void main (String [] args){
+        for (int z = 1; z <= 5; z++) {
+           
+            for (int i = 1; i <= z; i++) {
+                System.out.print("*");
+            }
+            
+            System.out.println();
+        }
+    
+    }
+}

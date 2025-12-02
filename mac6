@@ -1,0 +1,22 @@
+import javax.swing.*;
+public class mac6
+{
+    public static void main (String [] args){
+        int[] numbers = {3, 8, 5, 12, 7, 6, 11}; 
+        int sum = 0, count = 0;
+
+        for (int num : numbers) {
+            if (num % 2 != 0) { 
+                sum += num;
+                count++;
+            }
+        }
+
+        if (count > 0) {
+            double average = (double) sum / count;
+            JOptionPane.showMessageDialog(null, "Average of odd numbers: " + average);
+        } else {
+            JOptionPane.showMessageDialog(null, "No odd numbers in the array.");
+        }
+    }
+}

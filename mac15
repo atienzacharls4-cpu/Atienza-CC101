@@ -1,0 +1,19 @@
+import java.util.*;
+public class mac15
+{
+     public static void main(String[] args) {
+        int[] arr = {2, 4, 2, 2, 5};
+        int even = 0, odd = 0;
+
+        for (int a : arr) {
+            if (a % 2 == 0) {
+                even++;
+            } else {
+                odd++;
+            }
+        }
+
+        System.out.println("Even: " + even);
+        System.out.println("Odd: " + odd);
+    }
+}

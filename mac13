@@ -1,12 +1,17 @@
 import java.util.*;
-public class mac13
-{
-    public static void main(String[] args) {
-        int[] numbers = {5, 3, 8, 10};
 
-        System.out.print("Number of digits per value: ");
-        for (int n : numbers) {
-            System.out.print(String.valueOf(n).length() + " ");
+public class mac13 {
+    public static void main(String[] args) {
+        int[] grades = {98, 67, 74, 81, 85, 72};
+        int passed = 0, failed = 0;
+
+        for (int g : grades) {
+            if (g >= 75) passed++; // passing condition
+            else failed++; // otherwise it's failed
         }
+
+        System.out.println("Passed: " + passed);
+        System.out.println("Failed: " + failed);
     }
 }
+

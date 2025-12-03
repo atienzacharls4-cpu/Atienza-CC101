@@ -3,7 +3,7 @@ public class mac11 {
         String[] arr = {"A", "B", "C", "D", "E", "F"};
 
         System.out.print("Even-index elements: ");
-        for (int i = 0; i < arr.length; i += 2) { // jumps by 2 to get 0,2,4...
+        for (int i = 0; i < arr.length; i += 2) { 
             System.out.print(arr[i] + " ");
         }
     }

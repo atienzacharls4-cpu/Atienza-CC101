@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Q18 {
+public class mac18 {
     public static void main(String[] args) {
         int[] arr = {1, 4, 2, 5, 4};
         boolean hasDuplicate = false;

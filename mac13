@@ -6,8 +6,8 @@ public class mac13 {
         int passed = 0, failed = 0;
 
         for (int g : grades) {
-            if (g >= 75) passed++; // passing condition
-            else failed++; // otherwise it's failed
+            if (g >= 75) passed++; 
+            else failed++;
         }
 
         System.out.println("Passed: " + passed);

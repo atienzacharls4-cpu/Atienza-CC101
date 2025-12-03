@@ -1,20 +1,18 @@
-import java.util.*;
-public class mac17
-{
+public class Q17 {
     public static void main(String[] args) {
-        int[] arr = {2, 4, 2, 2, 5};
-        int min = arr[0], max = arr[0];
+        int[] arr = {10, 5, 20, 8, 20, 15};
+        int highest = Integer.MIN_VALUE;
+        int secondHighest = Integer.MIN_VALUE;
 
-        for (int a : arr) {
-            if (a < min) {
-                min = a;
-            }
-            if (a > max) {
-                max = a;
+        for (int n : arr) {
+            if (n > highest) {
+                secondHighest = highest; 
+                highest = n; 
+            } else if (n > secondHighest && n != highest) {
+                secondHighest = n; 
             }
         }
 
-        System.out.println("Smallest: " + min);
-        System.out.println("Largest: " + max);
+        System.out.println("Second Highest: " + secondHighest);
     }
 }

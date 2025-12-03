@@ -1,0 +1,22 @@
+import java.util.*;
+public class mac20
+{
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int sum = 0;
+        int input;
+
+        System.out.println("Enter numbers (0 to stop):");
+
+        while (true) {
+            input = scanner.nextInt();
+            if (input == 0) {
+                break;
+            }
+            sum += input;
+        }
+
+        System.out.println("Total Sum: " + sum);
+        scanner.close();
+    }
+}

@@ -1,0 +1,15 @@
+import java.util.*;
+public class mac16
+{
+    public static void main(String[] args) {
+        int[] arr = {2, 4, 2, 2, 5};
+
+        System.out.print("Loop stops when 5 is found: ");
+        for (int a : arr) {
+            System.out.print(a + " ");
+            if (a == 5) {
+                break;
+            }
+        }
+    }
+}

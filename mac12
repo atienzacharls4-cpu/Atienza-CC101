@@ -1,18 +1,13 @@
-import java.util.*;
-public class mac12
-{
-     public static void main(String[] args) {
-        int[] numbers = {5, -3, -8, 10};
+public class mac12 {
+    public static void main(String[] args) {
+        int[] arr = {5, 2, 5, 5, 1, 5};
+        int target = 5;
+        int count = 0;
 
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] < 0) {
-                numbers[i] = -numbers[i];
-            }
+        for (int n : arr) { 
+            if (n == target) count++;
         }
 
-        System.out.print("Positive converted: ");
-        for (int n : numbers) {
-            System.out.print(n + " ");
-        }
+        System.out.println("Appears at least 3 times? " + (count >= 3));
     }
 }

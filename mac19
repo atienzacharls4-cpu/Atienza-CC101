@@ -1,4 +1,4 @@
-public class Q19 {
+public class mac19 {
     public static void main(String[] args) {
         String[] names = {"John", "Anna", "Mike"};
         int[] grades = {85, 92, 74};

@@ -1,15 +1,14 @@
 import java.util.*;
-public class mac16
-{
-    public static void main(String[] args) {
-        int[] arr = {2, 4, 2, 2, 5};
 
-        System.out.print("Loop stops when 5 is found: ");
-        for (int a : arr) {
-            System.out.print(a + " ");
-            if (a == 5) {
-                break;
-            }
-        }
+public class mac16 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = sc.nextInt();
+
+        int digits = String.valueOf(Math.abs(num)).length();
+        System.out.println("Digits: " + digits);
+
+        sc.close();
     }
 }

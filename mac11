@@ -1,0 +1,14 @@
+import java.util.*;
+public class mac11
+{
+    public static void main (String [] args){
+        int[] scores = {90, 74, 76, 80, 65};
+
+        System.out.print("Values greater than 50: ");
+        for (int s : scores) {
+            if (s > 50) {
+                System.out.print(s + " ");
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+import java.util.*;
+import javax.swing.*;
+public class mac10
+{
+   public static void main(String[] args) {
+        int[] scores = {94, 78, 80, 87, 65};
+        int passed = 0;
+
+        for (int s : scores) {
+            if (s >= 75) {
+                passed++;
+            }
+        }
+
+        JOptionPane.showMessageDialog(null, "Passed students: " + passed);
+    }
+}

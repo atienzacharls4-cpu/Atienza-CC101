@@ -1,16 +1,19 @@
 import java.util.*;
-public class mac18
-{
-     public static void main(String[] args) {
-        int[] arr = {2, 4, 2, 2, 5};
-        int highest = arr[0];
 
-        for (int a : arr) {
-            if (a > highest) {
-                highest = a;
+public class Q18 {
+    public static void main(String[] args) {
+        int[] arr = {1, 4, 2, 5, 4};
+        boolean hasDuplicate = false;
+        Set<Integer> set = new HashSet<>();
+
+        for (int n : arr) {
+            if (set.contains(n)) { 
+                hasDuplicate = true;
+                break;
             }
+            set.add(n); 
         }
 
-        System.out.println("Highest: " + highest);
+        System.out.println("Contains duplicate? " + hasDuplicate);
     }
 }

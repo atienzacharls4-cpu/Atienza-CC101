@@ -1,14 +1,15 @@
-import java.util.*;
+import java.util.Scanner;
 
-public class mac16 {
+public class CountDigits {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
+        
         System.out.print("Enter a number: ");
-        int num = sc.nextInt();
-
-        int digits = String.valueOf(Math.abs(num)).length();
-        System.out.println("Digits: " + digits);
-
-        sc.close();
+        String input = scanner.nextLine();  
+        
+        int numDigits = input.replace("-", "").length();  
+        System.out.println("The number has " + numDigits + " digits.");
+        
+        scanner.close();
     }
 }
